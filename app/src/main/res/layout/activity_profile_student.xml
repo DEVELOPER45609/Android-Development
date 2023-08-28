@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileStudent"
+    android:background="@drawable/h">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        tools:ignore="MissingConstraints"
+        android:background="@color/maroon"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="-10dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="-30dp"
+            android:src="@drawable/ab" />
+
+        <TextView
+            android:id="@+id/userEmailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textColor="@color/white"
+            android:text="User Email"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"/>
+
+    </FrameLayout>
+    <ViewFlipper
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:flipInterval="2000"
+        android:autoStart="true"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/z" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/y" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/x" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/w" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/v" />
+
+    </ViewFlipper>
+
+<LinearLayout
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="250dp"
+    tools:ignore="MissingConstraints">
+
+    <CheckBox
+        android:id="@+id/courseCloudComputing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:text="Cloud Computing"
+        android:textColor="@color/black"
+        tools:ignore="NotSibling" />
+
+    <CheckBox
+        android:id="@+id/courseProjectManagement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:text="Project Management"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/courseBusinessAnalytics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:text="Business Analytics"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <CheckBox
+        android:id="@+id/courseMachineLearning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:text="Machine Learning"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+
+
+    <CheckBox
+        android:id="@+id/courseCyberSecurity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:text="Cyber Security"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/mark"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Mark Attendance"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/button_touch_effect"
+        android:onClick="markAttendance"/>
+
+</LinearLayout>
+
+
+
+
+<Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="@color/black"
+        android:background="@drawable/button_touch_effect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="logout" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

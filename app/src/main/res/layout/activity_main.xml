@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="235dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a"
+            android:layout_marginTop="-5dp"/>
+
+        <Button
+            android:id="@+id/studentButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="I'm a Student"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@drawable/button_touch_effect"
+            android:layout_marginTop="30dp"/>
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="I'm an Instructor"
+            android:id="@+id/instructorButton"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@drawable/button_touch_effect"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Feature Highlights: Student Attendance and Instructor Management -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feature Highlights"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Attendance Tracking"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"/>
+
+
+
+
+
+
+        <!-- Footer: Copyright, Privacy Policy, Terms of Use -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copyright © 2023 Your App Name. All rights reserved."
+            android:textColor="@color/black"
+            android:layout_marginTop="96dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy | Terms of Use"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <!-- Bottom navigation view -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
